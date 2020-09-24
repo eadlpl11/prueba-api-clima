@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+    <script src="https:code.jquery.com/jquery-3.3.1.min.js"> integrity="sha256-FgpCb/KJQlLNf0u91ta32o/NMZxltwRo8QtmkMRdAu8="</script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <p>id = 0992980022c954f778d9af015783d3b4
+        <br>
+       url (plantilla) = api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
+       <br>
+       url (completa) = http://api.openweathermap.org/data/2.5/weather?q=Chihuahua&units=metric&appid=0992980022c954f778d9af015783d3b4
+    </p>
+
+    <div class="weather-container">
+        
+        <label for="city">Ciudad</label>
+        
+        
+        <input type="text" placeholder="Ciudad" id="Ciudad" >
+        <button id="button" type="button" onclick="getInputValue();">Buscar</button>
+        
+        
+        
+        <p class="weather"></p>
+        <p class="temp"></p>
+    </div>
+    <img class="icon" id="icono">
+</body>
+</html>
